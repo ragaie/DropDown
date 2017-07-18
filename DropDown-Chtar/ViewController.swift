@@ -30,7 +30,7 @@ class ViewController: UIViewController ,DropDownDelegate{
         
         firstDropDown.dataSourceItem = items1
         secandDropDown.dataSourceItem = items2
-        firstDropDown.delegate = self
+       firstDropDown.delegate = self
         secandDropDown.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }

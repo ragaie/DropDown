@@ -214,7 +214,9 @@ func initSubviews() {
         
         itemLabel.text = "\(dataSourceItem[indexPath.row])"
         
-        self.delegate.dropDown(self, didSelectRowAt: indexPath)
+        if delegate != nil {
+            self.delegate.dropDown(self, didSelectRowAt: indexPath)
+        }
         tableData.removeFromSuperview()
         showDrop = false
 
